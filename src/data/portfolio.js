@@ -177,11 +177,59 @@ export const projects = [
     tags: ['Node.js', 'Express', 'MySQL', 'JWT', 'Swagger'],
     link: 'https://github.com/SmRafialam',
   },
+  {
+    title: 'Trend Up — Fashion E-Commerce',
+    org: 'Trend Up',
+    category: 'E-Commerce',
+    year: '2026',
+    image: '/assets/proj-trendup.jpg',
+    description:
+      'Full-stack fashion e-commerce store with a Next.js frontend and Node.js backend — product catalog, cart, wishlist, discounts and checkout in a fast, modern UI.',
+    tags: ['Next.js', 'Node.js', 'E-Commerce', 'Full-Stack'],
+    featured: true,
+    link: 'https://e-commerce-site-two-steel.vercel.app',
+  },
+  {
+    title: 'ORCA Electronics Store',
+    org: 'AKIJ Resource',
+    category: 'E-Commerce',
+    year: '2025',
+    image: '/assets/proj-orca.jpg',
+    description:
+      'E-commerce platform for ORCA (Akij) delivering global electronics brands in Bangladesh — product catalog, categories, search, wishlist and cart.',
+    tags: ['WordPress', 'WooCommerce', 'E-Commerce', 'PHP'],
+    link: 'https://akijce.com',
+  },
+  {
+    title: 'Brain Forward — Learning Platform',
+    org: 'Brain Forward',
+    category: 'Web & WordPress',
+    year: '2025',
+    image: '/assets/proj-brainforward.jpg',
+    description:
+      'Brain-training & e-learning platform (Bangla) with course catalog, blog and enrollment — built and customized on WordPress.',
+    tags: ['WordPress', 'LMS', 'Elementor', 'PHP'],
+    featured: true,
+    link: 'https://brainforward.com.bd',
+  },
+  {
+    title: 'Travilo — Travel Tech Platform',
+    org: 'Travilo',
+    category: 'Web & WordPress',
+    year: '2025',
+    image: '/assets/proj-travilo.jpg',
+    description:
+      'Marketing & product site for a travel-technology SaaS (booking, ticketing, B2B) — modern responsive design built on WordPress.',
+    tags: ['WordPress', 'Landing Page', 'UI/UX', 'Responsive'],
+    link: 'https://travilo.io',
+  },
 ]
 
 // Ordered project categories (used for grouping in the Work section).
 export const projectCategories = [
   'Enterprise Platforms',
+  'E-Commerce',
+  'Web & WordPress',
   'Data & Document Systems',
   'APIs & Backends',
 ]
