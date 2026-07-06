@@ -8,7 +8,7 @@ export default function Experience() {
       <SectionHeading
         eyebrow="Where I've worked"
         title="Experience"
-        subtitle="3+ years building enterprise products across the stack."
+        subtitle="5+ years building enterprise products across the stack."
       />
 
       <div className="relative mx-auto max-w-3xl">

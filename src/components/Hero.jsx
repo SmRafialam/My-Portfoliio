@@ -168,7 +168,7 @@ export default function Hero() {
             transition={{ delay: 0.9 }}
             className="absolute -bottom-4 -left-4 glass rounded-2xl px-4 py-3 shadow-glow-cyan"
           >
-            <p className="text-2xl font-extrabold text-ink">3+</p>
+            <p className="text-2xl font-extrabold text-ink">5+</p>
             <p className="text-xs text-muted">Years building</p>
           </motion.div>
         </motion.div>

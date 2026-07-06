@@ -14,7 +14,7 @@ export const profile = {
   resume: '/assets/Rafi_Alam_Resume.pdf',
   photo: '/assets/profile.png',
   summary:
-    "I'm a software engineer with 3+ years of experience shipping full-stack products — from Product Information Management systems to enterprise document workflows and business-automation platforms. I work across the stack with Angular, Node.js, Nest.js and Django, and I love turning messy requirements into clean, fast, maintainable software.",
+    "I'm a software engineer with 5+ years of experience shipping full-stack products — from Product Information Management systems to enterprise document workflows and business-automation platforms. I work across the stack with Angular, Node.js, Nest.js and Django, and I love turning messy requirements into clean, fast, maintainable software.",
   typewriter: [
     'Software Engineer',
     'Full-Stack Developer',
@@ -22,7 +22,7 @@ export const profile = {
     'Automation Builder',
   ],
   stats: [
-    { label: 'Years experience', value: '3+' },
+    { label: 'Years experience', value: '5+' },
     { label: 'Companies', value: '3' },
     { label: 'Products shipped', value: '10+' },
     { label: 'Research paper', value: '1' },
