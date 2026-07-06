@@ -223,6 +223,28 @@ export const projects = [
     tags: ['WordPress', 'Landing Page', 'UI/UX', 'Responsive'],
     link: 'https://travilo.io',
   },
+  {
+    title: 'Sea Sky — Fashion Store',
+    org: 'Sea Sky',
+    category: 'E-Commerce',
+    year: '2025',
+    image: '/assets/proj-seasky.jpg',
+    description:
+      "Men's fashion & lifestyle e-commerce store built on WordPress/WooCommerce — product catalog, categories, filters, wishlist and cart.",
+    tags: ['WordPress', 'WooCommerce', 'E-Commerce', 'PHP'],
+    link: 'https://seasky.com.bd',
+  },
+  {
+    title: 'Tampa Buzz 360 — News & Blog',
+    org: 'Tampa Buzz 360',
+    category: 'Web & WordPress',
+    year: '2026',
+    image: '/assets/proj-tampabuzz.jpg',
+    description:
+      'News & lifestyle magazine site covering Tampa Bay — categorized stories, events and guides with a clean, content-first WordPress build.',
+    tags: ['WordPress', 'Blog', 'Magazine', 'SEO'],
+    link: 'https://tampabuzz360.com',
+  },
 ]
 
 // Ordered project categories (used for grouping in the Work section).
