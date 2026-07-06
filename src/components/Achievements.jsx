@@ -35,11 +35,11 @@ export default function Achievements() {
                   <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-accent/20 to-accent2/20 text-accent2">
                     <Icon size={20} />
                   </span>
-                  <span className="font-mono text-sm text-slate-500">{a.year}</span>
+                  <span className="font-mono text-sm text-faint">{a.year}</span>
                 </div>
-                <h3 className="font-semibold leading-snug text-white">{a.title}</h3>
-                <p className="mt-1 text-sm text-slate-400">{a.org}</p>
-                <span className="mt-3 inline-block rounded-full bg-white/[0.05] px-2.5 py-0.5 text-[11px] font-medium text-slate-300">
+                <h3 className="font-semibold leading-snug text-ink">{a.title}</h3>
+                <p className="mt-1 text-sm text-muted">{a.org}</p>
+                <span className="mt-3 inline-block rounded-full bg-panel2 px-2.5 py-0.5 text-[11px] font-medium text-body">
                   {a.type}
                 </span>
               </motion.div>
@@ -58,16 +58,16 @@ export default function Achievements() {
               <p className="mt-5 font-mono text-xs uppercase tracking-[0.2em] text-accent2">
                 Research Publication
               </p>
-              <h3 className="mt-2 text-xl font-bold leading-snug text-white">
+              <h3 className="mt-2 text-xl font-bold leading-snug text-ink">
                 {research.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-slate-300">{research.blurb}</p>
+              <p className="mt-3 text-sm leading-relaxed text-body">{research.blurb}</p>
 
-              <div className="mt-5 space-y-1.5 text-sm text-slate-400">
+              <div className="mt-5 space-y-1.5 text-sm text-muted">
                 <p className="flex items-center gap-2">
                   <FiAward className="text-accent2" /> {research.conference}
                 </p>
-                <p className="pl-6 text-slate-500">Published by {research.publisher}</p>
+                <p className="pl-6 text-faint">Published by {research.publisher}</p>
               </div>
 
               <a

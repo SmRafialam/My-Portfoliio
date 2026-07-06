@@ -1,12 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
       colors: {
-        base: '#0a0a12',
-        surface: '#11111d',
-        card: '#161627',
+        // Semantic tokens — resolve to CSS variables that swap per theme.
+        base: 'var(--bg)',
+        surface: 'var(--surface)',
+        card: 'var(--card)',
+        ink: 'var(--ink)', // strong headings
+        body: 'var(--body)', // default text
+        muted: 'var(--muted)', // secondary text
+        faint: 'var(--faint)', // tertiary text
+        line: 'var(--line)', // borders (includes alpha)
+        panel: 'var(--panel)', // subtle fill
+        panel2: 'var(--panel2)', // stronger fill
+        // Brand accents stay constant across themes.
         accent: '#7c5cff',
         accent2: '#22d3ee',
         neon: '#a78bfa',

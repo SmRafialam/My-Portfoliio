@@ -13,10 +13,10 @@ export default function About() {
         {/* Bio */}
         <Reveal>
           <div className="space-y-5">
-            <h3 className="text-2xl font-bold text-white">
+            <h3 className="text-2xl font-bold text-ink">
               Engineer who ships end-to-end.
             </h3>
-            <p className="leading-relaxed text-slate-400">{profile.summary}</p>
+            <p className="leading-relaxed text-muted">{profile.summary}</p>
 
             <div className="flex flex-wrap gap-3 pt-2">
               <span className="chip">
@@ -42,7 +42,7 @@ export default function About() {
                   className="glass card-hover rounded-2xl p-4 text-center"
                 >
                   <p className="gradient-text text-3xl font-extrabold">{s.value}</p>
-                  <p className="mt-1 text-xs text-slate-400">{s.label}</p>
+                  <p className="mt-1 text-xs text-muted">{s.label}</p>
                 </motion.div>
               ))}
             </motion.div>
@@ -56,24 +56,24 @@ export default function About() {
               <span className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-accent to-accent2 text-white">
                 <PiGraduationCapBold size={22} />
               </span>
-              <h3 className="text-xl font-bold text-white">Education</h3>
+              <h3 className="text-xl font-bold text-ink">Education</h3>
             </div>
 
-            <div className="relative space-y-6 border-l border-white/10 pl-6">
+            <div className="relative space-y-6 border-l border-line pl-6">
               {education.map((e, i) => (
                 <div key={i} className="relative">
                   <span className="absolute -left-[31px] top-1 grid h-4 w-4 place-items-center rounded-full border-2 border-accent bg-base">
                     <span className="h-1.5 w-1.5 rounded-full bg-accent2" />
                   </span>
                   <p className="text-xs font-mono text-accent2">{e.year}</p>
-                  <h4 className="font-semibold text-white">{e.school}</h4>
-                  <p className="text-sm text-slate-400">
+                  <h4 className="font-semibold text-ink">{e.school}</h4>
+                  <p className="text-sm text-muted">
                     {e.degree} · {e.location}
                   </p>
                   {e.courses && (
                     <div className="mt-2 flex flex-wrap gap-1.5">
                       {e.courses.slice(0, 5).map((c) => (
-                        <span key={c} className="rounded-md bg-white/[0.04] px-2 py-0.5 text-[11px] text-slate-400">
+                        <span key={c} className="rounded-md bg-panel px-2 py-0.5 text-[11px] text-muted">
                           {c}
                         </span>
                       ))}

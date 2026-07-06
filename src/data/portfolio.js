@@ -117,6 +117,8 @@ export const projects = [
   {
     title: 'Enterprise Web & Automation Systems',
     org: 'AKIJ iBOS Limited',
+    category: 'Enterprise Platforms',
+    year: '2025',
     image: '/assets/proj-ibos.png',
     description:
       'Scalable WordPress platforms and high-performance Angular apps with automated KPI reporting, n8n workflows, Node.js reporting tools and API-driven business automation.',
@@ -126,6 +128,8 @@ export const projects = [
   {
     title: 'AeroDrop & AeroApp',
     org: 'AKIJ iBOS Limited',
+    category: 'Enterprise Platforms',
+    year: '2025',
     image: '/assets/proj-aero.png',
     description:
       'Interactive product frontends within the AKIJ suite — delivery, requirements and UX for the Aero platform experiences.',
@@ -134,6 +138,8 @@ export const projects = [
   {
     title: 'Managerium',
     org: 'AKIJ iBOS Limited',
+    category: 'Enterprise Platforms',
+    year: '2025',
     image: '/assets/proj-managerium.png',
     description:
       'Management platform frontend in the AKIJ product ecosystem, focused on clean interactive workflows and reporting.',
@@ -142,6 +148,8 @@ export const projects = [
   {
     title: 'AIMS — Dynamic Document Management System',
     org: 'Meraki Innovations',
+    category: 'Data & Document Systems',
+    year: '2025',
     image: '/assets/proj-ss.png',
     description:
       'Robust document classification, dynamic configuration, workflow automation, theme customization and external integrations for end-to-end document & process management.',
@@ -151,6 +159,8 @@ export const projects = [
   {
     title: 'PIM — Product Information Management',
     org: 'Zecodeek IT',
+    category: 'Data & Document Systems',
+    year: '2023',
     image: '/assets/proj-ss2.png',
     description:
       'Centralized Product Inventory Management system built with Angular, Node.js, Nest.js and MongoDB for efficient, accurate operations at scale.',
@@ -159,12 +169,21 @@ export const projects = [
   {
     title: 'Volcano Project API',
     org: 'Personal',
+    category: 'APIs & Backends',
+    year: '2023',
     image: '/assets/proj-aerodrop.png',
     description:
       'Scalable REST API built with Node.js, Express, MySQL, Swagger, Knex and JWT auth — including unit testing for reliable backend functionality.',
     tags: ['Node.js', 'Express', 'MySQL', 'JWT', 'Swagger'],
     link: 'https://github.com/SmRafialam',
   },
+]
+
+// Ordered project categories (used for grouping in the Work section).
+export const projectCategories = [
+  'Enterprise Platforms',
+  'Data & Document Systems',
+  'APIs & Backends',
 ]
 
 export const achievements = [

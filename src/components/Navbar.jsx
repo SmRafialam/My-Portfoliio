@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import { navLinks, profile } from '../data/portfolio'
+import ThemeToggle from './ThemeToggle'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -38,11 +39,11 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'border-b border-white/10 bg-base/80 backdrop-blur-lg' : 'bg-transparent'
+        scrolled ? 'border-b border-line nav-blur backdrop-blur-lg' : 'bg-transparent'
       }`}
     >
       <nav className="container-page flex h-16 items-center justify-between">
-        <a href="#home" className="group flex items-center gap-2 font-bold text-white">
+        <a href="#home" className="group flex items-center gap-2 font-bold text-ink">
           <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-accent to-accent2 text-sm font-extrabold text-white shadow-glow">
             R
           </span>
@@ -58,13 +59,13 @@ export default function Navbar() {
               <a
                 href={l.href}
                 className={`relative rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
-                  active === l.href ? 'text-white' : 'text-slate-400 hover:text-white'
+                  active === l.href ? 'text-ink' : 'text-muted hover:text-ink'
                 }`}
               >
                 {active === l.href && (
                   <motion.span
                     layoutId="nav-pill"
-                    className="absolute inset-0 -z-10 rounded-full bg-white/10"
+                    className="absolute inset-0 -z-10 rounded-full bg-panel2"
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -74,18 +75,24 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a href={profile.resume} target="_blank" rel="noreferrer" className="hidden btn-primary !px-5 !py-2.5 md:inline-flex">
-          Resume
-        </a>
+        <div className="hidden items-center gap-3 md:flex">
+          <ThemeToggle />
+          <a href={profile.resume} target="_blank" rel="noreferrer" className="btn-primary !px-5 !py-2.5">
+            Resume
+          </a>
+        </div>
 
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setOpen((v) => !v)}
-          className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 text-white md:hidden"
-          aria-label="Toggle menu"
-        >
-          {open ? <HiX size={22} /> : <HiMenuAlt3 size={22} />}
-        </button>
+        {/* Mobile controls */}
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+          <button
+            onClick={() => setOpen((v) => !v)}
+            className="grid h-10 w-10 place-items-center rounded-lg border border-line text-ink"
+            aria-label="Toggle menu"
+          >
+            {open ? <HiX size={22} /> : <HiMenuAlt3 size={22} />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu */}
@@ -96,7 +103,7 @@ export default function Navbar() {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="overflow-hidden border-t border-white/10 bg-base/95 backdrop-blur-lg md:hidden"
+            className="overflow-hidden border-t border-line menu-blur backdrop-blur-lg md:hidden"
           >
             <ul className="container-page flex flex-col gap-1 py-4">
               {navLinks.map((l) => (
@@ -105,7 +112,7 @@ export default function Navbar() {
                     href={l.href}
                     onClick={() => setOpen(false)}
                     className={`block rounded-lg px-4 py-3 text-sm font-medium ${
-                      active === l.href ? 'bg-white/10 text-white' : 'text-slate-300'
+                      active === l.href ? 'bg-panel2 text-ink' : 'text-body'
                     }`}
                   >
                     {l.label}

@@ -65,7 +65,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-sm text-slate-300"
+            className="mb-5 inline-flex items-center gap-2 rounded-full border border-line bg-panel px-4 py-1.5 text-sm text-body"
           >
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
@@ -78,7 +78,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.05 }}
-            className="text-4xl font-extrabold leading-[1.1] text-white sm:text-5xl lg:text-6xl"
+            className="text-4xl font-extrabold leading-[1.1] text-ink sm:text-5xl lg:text-6xl"
           >
             Hi, I'm{' '}
             <span className="gradient-text animate-shimmer">{profile.name}</span>
@@ -88,7 +88,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="mt-4 flex items-center text-xl font-semibold text-slate-200 sm:text-2xl"
+            className="mt-4 flex items-center text-xl font-semibold text-body sm:text-2xl"
           >
             <span className="font-mono text-accent2">&gt;</span>
             <span className="ml-2">{typed}</span>
@@ -99,7 +99,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="mt-6 max-w-xl text-base leading-relaxed text-slate-400 sm:text-lg"
+            className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg"
           >
             {profile.tagline} I turn complex requirements into clean, fast,
             maintainable products.
@@ -134,7 +134,7 @@ export default function Hero() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={s.name}
-                  className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/[0.03] text-slate-300 transition-all hover:-translate-y-1 hover:border-accent/50 hover:text-white hover:shadow-glow"
+                  className="grid h-11 w-11 place-items-center rounded-full border border-line bg-panel text-body transition-all hover:-translate-y-1 hover:border-accent/50 hover:text-ink hover:shadow-glow"
                 >
                   <Icon size={18} />
                 </a>
@@ -151,7 +151,7 @@ export default function Hero() {
           className="relative mx-auto w-full max-w-sm"
         >
           <div className="absolute inset-0 -z-10 rounded-[2rem] bg-gradient-to-br from-accent/40 to-accent2/40 blur-2xl" />
-          <div className="animate-float overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-card to-surface p-2 shadow-glow">
+          <div className="animate-float overflow-hidden rounded-[2rem] border border-line bg-gradient-to-br from-card to-surface p-2 shadow-glow">
             <img
               src={profile.photo}
               alt={profile.name}
@@ -168,8 +168,8 @@ export default function Hero() {
             transition={{ delay: 0.9 }}
             className="absolute -bottom-4 -left-4 glass rounded-2xl px-4 py-3 shadow-glow-cyan"
           >
-            <p className="text-2xl font-extrabold text-white">3+</p>
-            <p className="text-xs text-slate-400">Years building</p>
+            <p className="text-2xl font-extrabold text-ink">3+</p>
+            <p className="text-xs text-muted">Years building</p>
           </motion.div>
         </motion.div>
       </div>

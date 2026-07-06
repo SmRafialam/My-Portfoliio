@@ -34,11 +34,11 @@ export function SectionHeading({ eyebrow, title, subtitle, id }) {
         <p className="mb-3 font-mono text-sm uppercase tracking-[0.3em] text-accent2">
           {eyebrow}
         </p>
-        <h2 className="text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
+        <h2 className="text-3xl font-extrabold text-ink sm:text-4xl md:text-5xl">
           {title}
         </h2>
         {subtitle && (
-          <p className="mx-auto mt-4 max-w-2xl text-base text-slate-400">{subtitle}</p>
+          <p className="mx-auto mt-4 max-w-2xl text-base text-muted">{subtitle}</p>
         )}
         <div className="mx-auto mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-accent to-accent2" />
       </Reveal>

@@ -18,7 +18,7 @@ const icons = {
 
 export default function Skills() {
   return (
-    <Section id="skills" className="bg-surface/40">
+    <Section id="skills" className="bg-surface">
       <SectionHeading
         eyebrow="What I work with"
         title="Skills & Tech Stack"
@@ -44,13 +44,13 @@ export default function Skills() {
                 <span className="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-accent/20 to-accent2/20 text-accent2 transition-colors group-hover:from-accent group-hover:to-accent2 group-hover:text-white">
                   <Icon size={20} />
                 </span>
-                <h3 className="font-semibold text-white">{group.title}</h3>
+                <h3 className="font-semibold text-ink">{group.title}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
                 {group.items.map((item) => (
                   <span
                     key={item}
-                    className="rounded-lg border border-white/[0.06] bg-white/[0.03] px-2.5 py-1 text-sm text-slate-300 transition-colors hover:border-accent/40 hover:text-white"
+                    className="rounded-lg border border-line bg-panel px-2.5 py-1 text-sm text-body transition-colors hover:border-accent/40 hover:text-ink"
                   >
                     {item}
                   </span>

@@ -42,14 +42,14 @@ export default function Experience() {
                         </span>
                       )}
                     </div>
-                    <h3 className="text-lg font-bold text-white">{job.role}</h3>
+                    <h3 className="text-lg font-bold text-ink">{job.role}</h3>
                     <p className="text-sm font-medium text-accent">{job.company}</p>
-                    <p className="mt-1 flex items-center gap-1 text-xs text-slate-500">
+                    <p className="mt-1 flex items-center gap-1 text-xs text-faint">
                       <FiMapPin size={12} /> {job.location}
                     </p>
                     <ul className="mt-4 space-y-2">
                       {job.points.map((p, j) => (
-                        <li key={j} className="flex gap-2 text-sm text-slate-400">
+                        <li key={j} className="flex gap-2 text-sm text-muted">
                           <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent2" />
                           {p}
                         </li>
@@ -57,7 +57,7 @@ export default function Experience() {
                     </ul>
                     <div className="mt-4 flex flex-wrap gap-1.5">
                       {job.tags.map((t) => (
-                        <span key={t} className="rounded-md bg-white/[0.04] px-2 py-0.5 text-[11px] text-slate-400">
+                        <span key={t} className="rounded-md bg-panel px-2 py-0.5 text-[11px] text-muted">
                           {t}
                         </span>
                       ))}
