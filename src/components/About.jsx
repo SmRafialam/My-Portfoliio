@@ -65,7 +65,7 @@ export default function About() {
                   <span className="absolute -left-[31px] top-1 grid h-4 w-4 place-items-center rounded-full border-2 border-accent bg-base">
                     <span className="h-1.5 w-1.5 rounded-full bg-accent2" />
                   </span>
-                  <p className="text-xs font-mono text-accent2">{e.year}</p>
+                  <p className="font-mono text-xs text-accent2">{e.year}</p>
                   <h4 className="font-semibold text-ink">{e.school}</h4>
                   <p className="text-sm text-muted">
                     {e.degree} · {e.location}

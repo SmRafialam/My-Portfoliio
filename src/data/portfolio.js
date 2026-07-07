@@ -12,7 +12,7 @@ export const profile = {
   email: 'smrafialam007@gmail.com',
   workEmail: 'shahriar.shuvo@ibos.io',
   resume: '/assets/Rafi_Alam_Resume.pdf',
-  photo: '/assets/profile.png',
+  photo: '/assets/about-graduation.jpg',
   summary:
     "I'm a software engineer with 5+ years of experience shipping full-stack products — from Product Information Management systems to enterprise document workflows and business-automation platforms. I work across the stack with Angular, Node.js, Nest.js and Django, and I love turning messy requirements into clean, fast, maintainable software.",
   typewriter: [
